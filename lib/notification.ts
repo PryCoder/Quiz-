@@ -1,7 +1,7 @@
 // src/lib/notifications.ts
 import webpush from 'web-push';
 import dbConnect from './db';
-import Notification from '@/models/Notification';
+import {Notification } from '@/models/Notification';
 import User from '@/models/User';
 
 webpush.setVapidDetails(
