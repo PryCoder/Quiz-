@@ -6,10 +6,7 @@ const nextConfig = {
   images: {
     domains: ['localhost', 'vercel.app'],
   },
-  webpack: (config) => {
-    config.externals = [...config.externals, 'bcrypt'];
-    return config;
-  },
+ 
   env: {
     MONGODB_URI: process.env.MONGODB_URI,
     JWT_SECRET: process.env.JWT_SECRET,
