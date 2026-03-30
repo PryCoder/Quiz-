@@ -29,7 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
     
     const existingSubscription = dbUser.pushSubscriptions.find(
-      sub => sub.endpoint === subscription.endpoint
+      (sub: any) => sub.endpoint === subscription.endpoint
     );
     
     if (!existingSubscription) {

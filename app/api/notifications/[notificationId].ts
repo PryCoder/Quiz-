@@ -1,7 +1,7 @@
 // src/pages/api/notifications/[notificationId].ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import dbConnect from '@/lib/db';
-import Notification from '@/models/Notification';
+import{ Notification} from '@/models/Notification';
 import { requireAuth } from '@/lib/auth';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
